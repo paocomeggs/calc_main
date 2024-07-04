@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt--br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Game | Fase4</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/calculadora.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <h2>FASE 4</h2>
+        <div class="calculadora">
+            <h2>CALC Game</h2>
+            <p id="resultado"></p>
+                <table>   
+                    <tr>
+                        <td colspan="2" rowspan="2"><button class="botao1" onclick="clean()"  id="clean">C</button></td>
+                        <td colspan="2"><div class="n_plays">Número de jogadas:</div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="plays" id="plays"></div></td>
+                    </tr>               
+                    <tr>
+                        <td><button class="botao" onclick="insert('+')">+</button></td>
+                        <td><button class="botao" onclick="insert('-')">-</button></td>
+                        <td><button class="botao" onclick="insert('*')">*</button></td>
+                        <td><button class="botao" onclick="insert('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('7')">7</button></td>
+                        <td><button class="botao" onclick="insert('8')">8</button></td>
+                        <td><button class="botao" onclick="insert('9')">9</button></td>
+                        <td><button class="botao" onclick="calcular()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('4')">4</button></td>
+                        <td><button class="botao" onclick="insert('5')" disabled style="background-color: #818181; cursor: default;">5</button></td>
+                        <td><button class="botao" onclick="insert('6')">6</button></td>
+                        <td rowspan="2"><button class="botao2" id="zero" onclick="insert('0')" disabled style="background-color: #818181; cursor: default;">0</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="botao" onclick="insert('1')">1</button></td>
+                        <td><button class="botao" onclick="insert('2')" disabled style="background-color: #818181; cursor: default;">2</button></td>
+                        <td><button class="botao" onclick="insert('3')">3</button></td>
+                    </tr>
+                </table>
+        </div>
+        <div class="invis">
+            <div class="calc" id="calc_lose">
+                <h2>Você perdeu :(</h2>
+                <table>
+                    <form action="./fases/fase4.html" >
+                        <input type="submit" value="Reiniciar fase" class="c" >
+                    </form>
+                </table>
+                <br>
+            </div>
+        </div>
+        <div class="invis">
+            <div class="calc" id="calc_win">
+                <h2>Você ganhou :)</h2>
+                <table>
+                    <form action="fase5.html" >
+                        <input type="submit" value="Próxima fase" class="a" >
+                    </form>
+                    <form action="fase4.html" >
+                        <input type="submit" value="Reiniciar fase" class="b" >
+                    </form>
+                </table>   
+                <br>    
+            </div>
+        </div> 
+    </div>
+</body>
+<script>
+    var op = 0;
+    document.getElementById('resultado').innerHTML = 2005; 
+    document.getElementById('plays').innerHTML =  6; 
+    
+    function clean(){
+        document.getElementById('resultado').innerHTML = 2005;
+        document.getElementById('plays').innerHTML = 6;
+    }
+</script>
+</html>

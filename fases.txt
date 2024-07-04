@@ -1,0 +1,29 @@
+fase 1 - limite: 3
+28
+
+fase 2 - limite: 4
+91
+
+fase 3 - limite: 5 
+1024
+
+fase 4 - limite: 6
+2005
+
+fase 5 - limite: 5
+846
+
+fase 6 - limite: 4
+202 
+
+fase 7 - limite: 4
+714
+
+fase 8 - limite: 3
+117
+
+fase 9 - limite: 4
+-43
+ 
+fase 10 - limite: 4
+-123
